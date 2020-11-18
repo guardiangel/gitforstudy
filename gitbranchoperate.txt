@@ -1,0 +1,13 @@
+1、创建一个分支，这会在当前所在的提交对象上创建一个指针
+G:\gitforstudy>git branch testing
+
+    Git 又是怎么知道当前在哪一个分支上呢？ 也很简单，它有一个名为 HEAD 的特殊指针。 请注意它和许多其它版本控制系统（如 Subversion 或 CVS）里的 HEAD 概念完全不同。 在 Git
+中，它是一个指针，指向当前所在的本地分支（译注：将 HEAD 想象为当前分支的别名）。在本例中，你仍然在master 分支上。 因为 git branch 命令仅仅 创建 一个新分支，并不会自动切换到新分支中去
+
+2.使用 git log 命令查看各个分支当前所指的对象。 提供这一功能的参数是 --decorate
+    G:\gitforstudy>git log --oneline --decorate
+5c42ec5 (HEAD -> main, origin/main, testing) <E9><87>.....
+
+3.切换分支
+
+
