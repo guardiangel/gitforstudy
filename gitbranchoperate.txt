@@ -9,5 +9,10 @@ G:\gitforstudy>git branch testing
 5c42ec5 (HEAD -> main, origin/main, testing) <E9><87>.....
 
 3.切换分支
+    G:\gitforstudy>git checkout testing
+    Switched to branch 'testing'
 
+4.创建分支同时切换 git checkout -b <new branch name>
+    G:\gitforstudy>git checkout -b testingtwo
+    Switched to a new branch 'testingtwo'
 
