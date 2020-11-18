@@ -16,3 +16,33 @@ G:\gitforstudy>git branch testing
     G:\gitforstudy>git checkout -b testingtwo
     Switched to a new branch 'testingtwo'
 
+5.切换分支到testing，修改文件indtx.html，再切换回来main，然后合并testing修改的文件到main
+	5.1 G:\gitforstudy>git checkout testing
+		Switched to branch 'testing'
+	5.2 G:\gitforstudy>git add src/main/resources/index.html
+
+	5.3 G:\gitforstudy>git status
+		On branch testing
+		Changes to be committed:
+		  (use "git restore --staged <file>..." to unstage)
+				new file:   src/main/resources/index.html
+
+	5.4 G:\gitforstudy>git commit  src/main/resources/index.html -m "for switch test"
+		[testing f473e76] for switch test
+		 1 file changed, 10 insertions(+)
+		 create mode 100644 src/main/resources/index.html
+
+	5.5 G:\gitforstudy>git status
+		On branch testing
+		nothing to commit, working tree clean
+
+	5.6 G:\gitforstudy>git checkout main
+		Switched to branch 'main'
+		Your branch is ahead of 'origin/main' by 1 commit.
+		  (use "git push" to publish your local commits)
+	5.7 G:\gitforstudy>git merge testing
+		Auto-merging gitbranchoperate.txt
+		Merge made by the 'recursive' strategy.
+		 src/main/resources/index.html | 10 ++++++++++
+		 1 file changed, 10 insertions(+)
+		 create mode 100644 src/main/resources/index.html
