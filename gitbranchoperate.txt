@@ -59,3 +59,15 @@ G:\gitforstudy>git branch testing
 	G:\gitforstudy>git branch
 	* main
 	  testing
+8.查看每一个分支的最后一次提交
+	G:\gitforstudy>git branch -v
+	main    27f7f54 <E6><8F><90><E4><BA><A4><E8><AE><B0><E5><BD><95><E6><96><87><E6><A1><A3>
+	* testing f473e76 for switch test
+
+9.查看哪些分支合并到当前分支上
+	G:\gitforstudy>git branch --merged
+	* main
+	testing
+
+10.查看所有包含未合并工作的分支
+	G:\gitforstudy>git branch --no-merged
