@@ -46,3 +46,16 @@ G:\gitforstudy>git branch testing
 		 src/main/resources/index.html | 10 ++++++++++
 		 1 file changed, 10 insertions(+)
 		 create mode 100644 src/main/resources/index.html
+
+6.查看所有分支及当前所在分支,结果中带*号的，表示为当前分支
+	G:\gitforstudy>git branch
+	* main
+	  testing
+	  testingtwo
+7.删除分支
+	G:\gitforstudy>git branch -d testingtwo
+	Deleted branch testingtwo (was 9f026b9).
+
+	G:\gitforstudy>git branch
+	* main
+	  testing
